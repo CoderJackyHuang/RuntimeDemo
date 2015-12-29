@@ -1,0 +1,10 @@
+PODS:
+  - HYBUnicodeReadable (0.0.1)
+
+DEPENDENCIES:
+  - HYBUnicodeReadable (~> 0.0.1)
+
+SPEC CHECKSUMS:
+  HYBUnicodeReadable: 3ba06a721d27f08b9aaee9ae89173ef5d092b9d6
+
+COCOAPODS: 0.39.0
