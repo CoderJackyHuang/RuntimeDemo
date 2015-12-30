@@ -22,6 +22,9 @@
 		6980598D1C30D6070021085B /* HYBTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6980598C1C30D6070021085B /* HYBTestModel.m */; };
 		6980598E1C30D6070021085B /* HYBTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6980598C1C30D6070021085B /* HYBTestModel.m */; };
 		6980598F1C30D6070021085B /* HYBTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6980598C1C30D6070021085B /* HYBTestModel.m */; };
+		698828201C3383F8002363D5 /* HDFArchiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988281F1C3383F8002363D5 /* HDFArchiveModel.m */; };
+		698828211C3383F8002363D5 /* HDFArchiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988281F1C3383F8002363D5 /* HDFArchiveModel.m */; };
+		698828221C3383F8002363D5 /* HDFArchiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988281F1C3383F8002363D5 /* HDFArchiveModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,8 @@
 		69654F921C30214500FFB5AC /* UIControl+HYBBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+HYBBlock.m"; sourceTree = "<group>"; };
 		6980598B1C30D6070021085B /* HYBTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBTestModel.h; sourceTree = "<group>"; };
 		6980598C1C30D6070021085B /* HYBTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBTestModel.m; sourceTree = "<group>"; };
+		6988281E1C3383F8002363D5 /* HDFArchiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFArchiveModel.h; sourceTree = "<group>"; };
+		6988281F1C3383F8002363D5 /* HDFArchiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFArchiveModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +132,7 @@
 		69654F581C2CDE6600FFB5AC /* RuntimeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6988281D1C3383B4002363D5 /* Archive */,
 				6980598A1C30D5E90021085B /* Dict-Model */,
 				69654F5C1C2CDE6600FFB5AC /* AppDelegate.h */,
 				69654F5D1C2CDE6600FFB5AC /* AppDelegate.m */,
@@ -176,6 +182,15 @@
 				6980598C1C30D6070021085B /* HYBTestModel.m */,
 			);
 			name = "Dict-Model";
+			sourceTree = "<group>";
+		};
+		6988281D1C3383B4002363D5 /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				6988281E1C3383F8002363D5 /* HDFArchiveModel.h */,
+				6988281F1C3383F8002363D5 /* HDFArchiveModel.m */,
+			);
+			name = Archive;
 			sourceTree = "<group>";
 		};
 		A4EC37D5D490197569607E30 /* Frameworks */ = {
@@ -370,6 +385,7 @@
 				69654F611C2CDE6600FFB5AC /* ViewController.m in Sources */,
 				69654F5E1C2CDE6600FFB5AC /* AppDelegate.m in Sources */,
 				69654F5B1C2CDE6600FFB5AC /* main.m in Sources */,
+				698828201C3383F8002363D5 /* HDFArchiveModel.m in Sources */,
 				6980598D1C30D6070021085B /* HYBTestModel.m in Sources */,
 				69654F931C30214500FFB5AC /* UIControl+HYBBlock.m in Sources */,
 			);
@@ -380,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69654F741C2CDE6600FFB5AC /* RuntimeDemoTests.m in Sources */,
+				698828211C3383F8002363D5 /* HDFArchiveModel.m in Sources */,
 				69654F941C30214500FFB5AC /* UIControl+HYBBlock.m in Sources */,
 				6980598E1C30D6070021085B /* HYBTestModel.m in Sources */,
 			);
@@ -390,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69654F7F1C2CDE6600FFB5AC /* RuntimeDemoUITests.m in Sources */,
+				698828221C3383F8002363D5 /* HDFArchiveModel.m in Sources */,
 				69654F951C30214500FFB5AC /* UIControl+HYBBlock.m in Sources */,
 				6980598F1C30D6070021085B /* HYBTestModel.m in Sources */,
 			);

@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 #import <objc/objc.h>
 #import "HYBTestModel.h"
+#import "HDFArchiveModel.h"
 
 @interface ViewController ()
 
@@ -23,7 +24,8 @@
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
 
-  [HYBTestModel test];
+//  [HYBTestModel test];
+  [HDFArchiveModel test];
 }
 
 - (void)didReceiveMemoryWarning {
