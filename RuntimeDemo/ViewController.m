@@ -11,6 +11,7 @@
 #import <objc/objc.h>
 #import "HYBTestModel.h"
 #import "HDFArchiveModel.h"
+#import "HYBCat.h"
 
 @interface ViewController ()
 
@@ -25,7 +26,8 @@
   // Do any additional setup after loading the view, typically from a nib.
 
 //  [HYBTestModel test];
-  [HDFArchiveModel test];
+//  [HDFArchiveModel test];
+  [HYBCat test];
 }
 
 - (void)didReceiveMemoryWarning {

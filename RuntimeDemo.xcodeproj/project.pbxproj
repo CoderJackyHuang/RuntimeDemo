@@ -25,6 +25,15 @@
 		698828201C3383F8002363D5 /* HDFArchiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988281F1C3383F8002363D5 /* HDFArchiveModel.m */; };
 		698828211C3383F8002363D5 /* HDFArchiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988281F1C3383F8002363D5 /* HDFArchiveModel.m */; };
 		698828221C3383F8002363D5 /* HDFArchiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988281F1C3383F8002363D5 /* HDFArchiveModel.m */; };
+		6988282B1C34CB9F002363D5 /* HYBCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988282A1C34CB9F002363D5 /* HYBCat.m */; };
+		6988282C1C34CB9F002363D5 /* HYBCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988282A1C34CB9F002363D5 /* HYBCat.m */; };
+		6988282D1C34CB9F002363D5 /* HYBCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988282A1C34CB9F002363D5 /* HYBCat.m */; };
+		698828301C34CBAB002363D5 /* HYBDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988282F1C34CBAB002363D5 /* HYBDog.m */; };
+		698828311C34CBAB002363D5 /* HYBDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988282F1C34CBAB002363D5 /* HYBDog.m */; };
+		698828321C34CBAB002363D5 /* HYBDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988282F1C34CBAB002363D5 /* HYBDog.m */; };
+		698828351C34D476002363D5 /* HYBPig.m in Sources */ = {isa = PBXBuildFile; fileRef = 698828341C34D476002363D5 /* HYBPig.m */; };
+		698828361C34D476002363D5 /* HYBPig.m in Sources */ = {isa = PBXBuildFile; fileRef = 698828341C34D476002363D5 /* HYBPig.m */; };
+		698828371C34D476002363D5 /* HYBPig.m in Sources */ = {isa = PBXBuildFile; fileRef = 698828341C34D476002363D5 /* HYBPig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +79,12 @@
 		6980598C1C30D6070021085B /* HYBTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBTestModel.m; sourceTree = "<group>"; };
 		6988281E1C3383F8002363D5 /* HDFArchiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDFArchiveModel.h; sourceTree = "<group>"; };
 		6988281F1C3383F8002363D5 /* HDFArchiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDFArchiveModel.m; sourceTree = "<group>"; };
+		698828291C34CB9F002363D5 /* HYBCat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBCat.h; sourceTree = "<group>"; };
+		6988282A1C34CB9F002363D5 /* HYBCat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBCat.m; sourceTree = "<group>"; };
+		6988282E1C34CBAB002363D5 /* HYBDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBDog.h; sourceTree = "<group>"; };
+		6988282F1C34CBAB002363D5 /* HYBDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBDog.m; sourceTree = "<group>"; };
+		698828331C34D476002363D5 /* HYBPig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBPig.h; sourceTree = "<group>"; };
+		698828341C34D476002363D5 /* HYBPig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBPig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +147,7 @@
 		69654F581C2CDE6600FFB5AC /* RuntimeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				698828281C34CB6A002363D5 /* ForwardMessage */,
 				6988281D1C3383B4002363D5 /* Archive */,
 				6980598A1C30D5E90021085B /* Dict-Model */,
 				69654F5C1C2CDE6600FFB5AC /* AppDelegate.h */,
@@ -191,6 +207,19 @@
 				6988281F1C3383F8002363D5 /* HDFArchiveModel.m */,
 			);
 			name = Archive;
+			sourceTree = "<group>";
+		};
+		698828281C34CB6A002363D5 /* ForwardMessage */ = {
+			isa = PBXGroup;
+			children = (
+				698828291C34CB9F002363D5 /* HYBCat.h */,
+				6988282A1C34CB9F002363D5 /* HYBCat.m */,
+				6988282E1C34CBAB002363D5 /* HYBDog.h */,
+				6988282F1C34CBAB002363D5 /* HYBDog.m */,
+				698828331C34D476002363D5 /* HYBPig.h */,
+				698828341C34D476002363D5 /* HYBPig.m */,
+			);
+			name = ForwardMessage;
 			sourceTree = "<group>";
 		};
 		A4EC37D5D490197569607E30 /* Frameworks */ = {
@@ -382,11 +411,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698828301C34CBAB002363D5 /* HYBDog.m in Sources */,
+				6988282B1C34CB9F002363D5 /* HYBCat.m in Sources */,
 				69654F611C2CDE6600FFB5AC /* ViewController.m in Sources */,
 				69654F5E1C2CDE6600FFB5AC /* AppDelegate.m in Sources */,
 				69654F5B1C2CDE6600FFB5AC /* main.m in Sources */,
 				698828201C3383F8002363D5 /* HDFArchiveModel.m in Sources */,
 				6980598D1C30D6070021085B /* HYBTestModel.m in Sources */,
+				698828351C34D476002363D5 /* HYBPig.m in Sources */,
 				69654F931C30214500FFB5AC /* UIControl+HYBBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,8 +428,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				69654F741C2CDE6600FFB5AC /* RuntimeDemoTests.m in Sources */,
+				6988282C1C34CB9F002363D5 /* HYBCat.m in Sources */,
 				698828211C3383F8002363D5 /* HDFArchiveModel.m in Sources */,
 				69654F941C30214500FFB5AC /* UIControl+HYBBlock.m in Sources */,
+				698828361C34D476002363D5 /* HYBPig.m in Sources */,
+				698828311C34CBAB002363D5 /* HYBDog.m in Sources */,
 				6980598E1C30D6070021085B /* HYBTestModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,8 +442,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				69654F7F1C2CDE6600FFB5AC /* RuntimeDemoUITests.m in Sources */,
+				6988282D1C34CB9F002363D5 /* HYBCat.m in Sources */,
 				698828221C3383F8002363D5 /* HDFArchiveModel.m in Sources */,
 				69654F951C30214500FFB5AC /* UIControl+HYBBlock.m in Sources */,
+				698828371C34D476002363D5 /* HYBPig.m in Sources */,
+				698828321C34CBAB002363D5 /* HYBDog.m in Sources */,
 				6980598F1C30D6070021085B /* HYBTestModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

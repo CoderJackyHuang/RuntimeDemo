@@ -3,7 +3,7 @@
 
 #文章讲解
 
-[标哥的技术博客](http://www.henishuo.com/runtime-model-dictionary-convert/)
+[标哥的技术博客](http://www.henishuo.com/category/runtime/)
 
 #关注我
 
