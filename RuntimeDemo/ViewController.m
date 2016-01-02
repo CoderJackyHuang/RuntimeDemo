@@ -12,6 +12,7 @@
 #import "HYBTestModel.h"
 #import "HDFArchiveModel.h"
 #import "HYBCat.h"
+#import "HYBMsgSend.h"
 
 @interface ViewController ()
 
@@ -27,7 +28,8 @@
 
 //  [HYBTestModel test];
 //  [HDFArchiveModel test];
-  [HYBCat test];
+//  [HYBCat test];
+  [HYBMsgSend test];
 }
 
 - (void)didReceiveMemoryWarning {

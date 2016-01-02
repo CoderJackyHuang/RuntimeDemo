@@ -34,6 +34,9 @@
 		698828351C34D476002363D5 /* HYBPig.m in Sources */ = {isa = PBXBuildFile; fileRef = 698828341C34D476002363D5 /* HYBPig.m */; };
 		698828361C34D476002363D5 /* HYBPig.m in Sources */ = {isa = PBXBuildFile; fileRef = 698828341C34D476002363D5 /* HYBPig.m */; };
 		698828371C34D476002363D5 /* HYBPig.m in Sources */ = {isa = PBXBuildFile; fileRef = 698828341C34D476002363D5 /* HYBPig.m */; };
+		69E0205C1C3771AF0034BF32 /* HYBMsgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E0205B1C3771AF0034BF32 /* HYBMsgSend.m */; };
+		69E0205D1C3771AF0034BF32 /* HYBMsgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E0205B1C3771AF0034BF32 /* HYBMsgSend.m */; };
+		69E0205E1C3771AF0034BF32 /* HYBMsgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E0205B1C3771AF0034BF32 /* HYBMsgSend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,8 @@
 		6988282F1C34CBAB002363D5 /* HYBDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBDog.m; sourceTree = "<group>"; };
 		698828331C34D476002363D5 /* HYBPig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBPig.h; sourceTree = "<group>"; };
 		698828341C34D476002363D5 /* HYBPig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBPig.m; sourceTree = "<group>"; };
+		69E0205A1C3771AF0034BF32 /* HYBMsgSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBMsgSend.h; sourceTree = "<group>"; };
+		69E0205B1C3771AF0034BF32 /* HYBMsgSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBMsgSend.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +152,7 @@
 		69654F581C2CDE6600FFB5AC /* RuntimeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				69E020591C3771860034BF32 /* Message */,
 				698828281C34CB6A002363D5 /* ForwardMessage */,
 				6988281D1C3383B4002363D5 /* Archive */,
 				6980598A1C30D5E90021085B /* Dict-Model */,
@@ -220,6 +226,15 @@
 				698828341C34D476002363D5 /* HYBPig.m */,
 			);
 			name = ForwardMessage;
+			sourceTree = "<group>";
+		};
+		69E020591C3771860034BF32 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				69E0205A1C3771AF0034BF32 /* HYBMsgSend.h */,
+				69E0205B1C3771AF0034BF32 /* HYBMsgSend.m */,
+			);
+			name = Message;
 			sourceTree = "<group>";
 		};
 		A4EC37D5D490197569607E30 /* Frameworks */ = {
@@ -420,6 +435,7 @@
 				6980598D1C30D6070021085B /* HYBTestModel.m in Sources */,
 				698828351C34D476002363D5 /* HYBPig.m in Sources */,
 				69654F931C30214500FFB5AC /* UIControl+HYBBlock.m in Sources */,
+				69E0205C1C3771AF0034BF32 /* HYBMsgSend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +446,7 @@
 				69654F741C2CDE6600FFB5AC /* RuntimeDemoTests.m in Sources */,
 				6988282C1C34CB9F002363D5 /* HYBCat.m in Sources */,
 				698828211C3383F8002363D5 /* HDFArchiveModel.m in Sources */,
+				69E0205D1C3771AF0034BF32 /* HYBMsgSend.m in Sources */,
 				69654F941C30214500FFB5AC /* UIControl+HYBBlock.m in Sources */,
 				698828361C34D476002363D5 /* HYBPig.m in Sources */,
 				698828311C34CBAB002363D5 /* HYBDog.m in Sources */,
@@ -444,6 +461,7 @@
 				69654F7F1C2CDE6600FFB5AC /* RuntimeDemoUITests.m in Sources */,
 				6988282D1C34CB9F002363D5 /* HYBCat.m in Sources */,
 				698828221C3383F8002363D5 /* HDFArchiveModel.m in Sources */,
+				69E0205E1C3771AF0034BF32 /* HYBMsgSend.m in Sources */,
 				69654F951C30214500FFB5AC /* UIControl+HYBBlock.m in Sources */,
 				698828371C34D476002363D5 /* HYBPig.m in Sources */,
 				698828321C34CBAB002363D5 /* HYBDog.m in Sources */,
