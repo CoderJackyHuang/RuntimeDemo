@@ -69,7 +69,7 @@ int cStyleFunc(const void *arg1, const void *arg2) {
   NSLog(@"6. return value is %d", returnValue);
   
   // 7.动态添加方法，然后调用C函数
-  class_addMethod(msg.class, NSSelectorFromString(@"cStyleFunc"), (IMP)cStyleFunc, "v@:");
+  class_addMethod(msg.class, NSSelectorFromString(@"cStyleFunc"), (IMP)cStyleFunc, "i@:");
   returnValue = ((int (*)(id, SEL, const void *, const void *))
                  objc_msgSend)((id)msg,
                                NSSelectorFromString(@"cStyleFunc"),
@@ -87,6 +87,7 @@ int cStyleFunc(const void *arg1, const void *arg2) {
   // 9.返回结构体时，不能使用objc_msgSend，而是要使用objc_msgSend_stret，否则会crash
   CGRect frame = ((CGRect (*)(id, SEL))objc_msgSend_stret)((id)msg, @selector(returnTypeIsStruct));
   NSLog(@"9. return value is %@", NSStringFromCGRect(frame));
+
 }
 
 @end
