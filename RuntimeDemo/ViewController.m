@@ -13,10 +13,11 @@
 #import "HDFArchiveModel.h"
 #import "HYBCat.h"
 #import "HYBMsgSend.h"
+#import "HYBMethodExchange.h"
+#import "HYBPropertyLearn.h"
+#import "HYBMethodLearn.h"
 
 @interface ViewController ()
-
-
 
 @end
 
@@ -29,7 +30,10 @@
 //  [HYBTestModel test];
 //  [HDFArchiveModel test];
 //  [HYBCat test];
-  [HYBMsgSend test];
+//  [HYBMsgSend test];
+//  [HYBMethodExchange test];
+//  [HYBPropertyLearn test];
+  [HYBMethodLearn test];
 }
 
 - (void)didReceiveMemoryWarning {
