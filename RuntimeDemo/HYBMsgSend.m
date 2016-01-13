@@ -44,17 +44,20 @@ int cStyleFunc(const void *arg1, const void *arg2) {
 
 - (CGRect)returnTypeIsStruct {
   NSLog(@"%s was called", __FUNCTION__);
-  
+ 
   return CGRectMake(0, 0, 10, 10);
 }
 
 + (void)test {
   // 1.创建对象
  HYBMsgSend *msg = ((HYBMsgSend * (*)(id, SEL))objc_msgSend)((id)[HYBMsgSend class], @selector(alloc));
+  
   // 2.初始化对象
  msg = ((HYBMsgSend * (*)(id, SEL))objc_msgSend)((id)msg, @selector(init));
+  
   // 3.调用无参数无返回值方法
   ((void (*)(id, SEL))objc_msgSend)((id)msg, @selector(noArgumentsAndNoReturnValue));
+  
   // 4.调用带一个参数但无返回值的方法
   ((void (*)(id, SEL, NSString *))objc_msgSend)((id)msg, @selector(hasArguments:), @"带一个参数，但无返回值");
   // 5.调用带返回值，但是不带参数
@@ -62,7 +65,7 @@ int cStyleFunc(const void *arg1, const void *arg2) {
   NSLog(@"5. 返回值为：%@", retValue);
   // 6.带参数带返回值
   int returnValue = ((int (*)(id, SEL, NSString *, int))
-                     objc_msgSend)((id)msg,
+                     objc_msgSend)(msg,
                                    @selector(hasArguments:andReturnValue:),
                                    @"参数1",
                                    2016);

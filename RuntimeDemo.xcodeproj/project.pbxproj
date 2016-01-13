@@ -34,6 +34,9 @@
 		69657DE41C44DB520095C032 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 69657DE31C44DB520095C032 /* NSObject+Swizzling.m */; };
 		69657DE51C44DB520095C032 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 69657DE31C44DB520095C032 /* NSObject+Swizzling.m */; };
 		69657DE61C44DB520095C032 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 69657DE31C44DB520095C032 /* NSObject+Swizzling.m */; };
+		69657E2D1C46402D0095C032 /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 69657E2C1C46402D0095C032 /* UIViewController+Swizzling.m */; };
+		69657E2E1C46402D0095C032 /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 69657E2C1C46402D0095C032 /* UIViewController+Swizzling.m */; };
+		69657E2F1C46402D0095C032 /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 69657E2C1C46402D0095C032 /* UIViewController+Swizzling.m */; };
 		697364B11C3A461F003E1FE9 /* HYBMethodExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 697364B01C3A461F003E1FE9 /* HYBMethodExchange.m */; };
 		697364B21C3A461F003E1FE9 /* HYBMethodExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 697364B01C3A461F003E1FE9 /* HYBMethodExchange.m */; };
 		697364B31C3A461F003E1FE9 /* HYBMethodExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 697364B01C3A461F003E1FE9 /* HYBMethodExchange.m */; };
@@ -106,6 +109,8 @@
 		69657DDE1C44D8620095C032 /* NSArray+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Swizzling.m"; sourceTree = "<group>"; };
 		69657DE21C44DB520095C032 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
 		69657DE31C44DB520095C032 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		69657E2B1C46402D0095C032 /* UIViewController+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzling.h"; sourceTree = "<group>"; };
+		69657E2C1C46402D0095C032 /* UIViewController+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzling.m"; sourceTree = "<group>"; };
 		697364AF1C3A461F003E1FE9 /* HYBMethodExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBMethodExchange.h; sourceTree = "<group>"; };
 		697364B01C3A461F003E1FE9 /* HYBMethodExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBMethodExchange.m; sourceTree = "<group>"; };
 		6980598B1C30D6070021085B /* HYBTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBTestModel.h; sourceTree = "<group>"; };
@@ -259,6 +264,8 @@
 				69657DDE1C44D8620095C032 /* NSArray+Swizzling.m */,
 				69657DE21C44DB520095C032 /* NSObject+Swizzling.h */,
 				69657DE31C44DB520095C032 /* NSObject+Swizzling.m */,
+				69657E2B1C46402D0095C032 /* UIViewController+Swizzling.h */,
+				69657E2C1C46402D0095C032 /* UIViewController+Swizzling.m */,
 			);
 			name = MethodExchange;
 			sourceTree = "<group>";
@@ -508,6 +515,7 @@
 				69654F931C30214500FFB5AC /* UIControl+HYBBlock.m in Sources */,
 				69E0205C1C3771AF0034BF32 /* HYBMsgSend.m in Sources */,
 				691D6FC51C421E68003D41FB /* HYBPropertyLearn.m in Sources */,
+				69657E2D1C46402D0095C032 /* UIViewController+Swizzling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +533,7 @@
 				691D6FC61C421E68003D41FB /* HYBPropertyLearn.m in Sources */,
 				698828361C34D476002363D5 /* HYBPig.m in Sources */,
 				697364B21C3A461F003E1FE9 /* HYBMethodExchange.m in Sources */,
+				69657E2E1C46402D0095C032 /* UIViewController+Swizzling.m in Sources */,
 				698828311C34CBAB002363D5 /* HYBDog.m in Sources */,
 				6980598E1C30D6070021085B /* HYBTestModel.m in Sources */,
 				69657DE01C44D8620095C032 /* NSArray+Swizzling.m in Sources */,
@@ -546,6 +555,7 @@
 				691D6FC71C421E68003D41FB /* HYBPropertyLearn.m in Sources */,
 				698828371C34D476002363D5 /* HYBPig.m in Sources */,
 				697364B31C3A461F003E1FE9 /* HYBMethodExchange.m in Sources */,
+				69657E2F1C46402D0095C032 /* UIViewController+Swizzling.m in Sources */,
 				698828321C34CBAB002363D5 /* HYBDog.m in Sources */,
 				6980598F1C30D6070021085B /* HYBTestModel.m in Sources */,
 				69657DE11C44D8620095C032 /* NSArray+Swizzling.m in Sources */,

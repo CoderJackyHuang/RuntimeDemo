@@ -39,6 +39,9 @@
   NSString *nilStr = nil;
   NSArray *array1 = @[@"ara", @"sdf", @"dsfdsf", nilStr];
   NSLog(@"array1.count = %lu", array1.count);
+  
+  // 测试数组中有数组
+  NSArray *array2 = @[@[@"12323", @"nsdf", nilStr], @[@"sdf", @"nilsdf", nilStr, @"sdhfodf"]];
 }
 
 // C语言版

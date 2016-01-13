@@ -12,18 +12,22 @@
 
 @implementation NSArray (Swizzling)
 
-//+ (void)load {
-//  static dispatch_once_t onceToken;
-//  dispatch_once(&onceToken, ^{
-//    [self swizzleSelector:@selector(lastObject)
-//     withSwizzledSelector:@selector(hdf_lastObject)];
-//  });
-//}
++ (void)load {
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    [self swizzleSelector:@selector(lastObject)
+     withSwizzledSelector:@selector(hdf_lastObject)];
+  });
+}
 
 - (id)hdf_lastObject {
-  NSLog(@"%s", __FUNCTION__);
+  if (self.count == 0) {
+    NSLog(@"%s 数组为空，直接返回nil", __FUNCTION__);
+    
+    return nil;
+  }
   
- return [self hdf_lastObject];
+  return [self hdf_lastObject];
 }
 
 

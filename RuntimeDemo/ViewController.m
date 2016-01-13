@@ -16,8 +16,11 @@
 #import "HYBMethodExchange.h"
 #import "HYBPropertyLearn.h"
 #import "HYBMethodLearn.h"
+#import "UIViewController+Swizzling.h"
 
-@interface ViewController ()
+@interface ViewController () <UIWebViewDelegate>
+
+@property (nonatomic, strong) UIWebView *webView;
 
 @end
 
@@ -33,12 +36,22 @@
 //  [HYBMsgSend test];
 //  [HYBMethodExchange test];
 //  [HYBPropertyLearn test];
-  [HYBMethodLearn test];
+//  [HYBMethodLearn test];
+  [self testWebview];
 }
 
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+- (void)testWebview {
+  self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+  self.webView.delegate = self;
+  NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.haodf.com/"]];
+  [self.webView loadRequest:req];
+}
+
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+  NSLog(@"url: %@", request.URL.absoluteString);
+  
+  return YES;
 }
 
 @end

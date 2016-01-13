@@ -31,12 +31,13 @@
       }
     }
   }
-  
+
   return self;
 }
 
 - (NSDictionary *)toDictionary {
   unsigned int outCount = 0;
+
   objc_property_t *properties = class_copyPropertyList([self class], &outCount);
   
   if (outCount != 0) {

@@ -14,12 +14,13 @@
 
 - (void)getAllProperties {
   unsigned int outCount = 0;
+  // Ivar
   objc_property_t *properties = class_copyPropertyList(self.class, &outCount);
   
   for (unsigned int i = 0; i < outCount; ++i) {
     objc_property_t property = properties[i];
      const char *propertyName = property_getName(property);
-    
+
    const char *propertyAttributes = property_getAttributes(property);
     NSLog(@"%s  %s", propertyName, propertyAttributes);
     

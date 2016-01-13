@@ -81,6 +81,7 @@
         NSString *firstLetter = [NSString stringWithFormat:@"%c", [setterName characterAtIndex:0]];
         setterName = [setterName substringFromIndex:1];
         setterName = [NSString stringWithFormat:@"%@%@", firstLetter.uppercaseString, setterName];
+
 //        [setterName stringByReplacingCharactersInRange:NSMakeRange(0, 0) withString:firstLetter.uppercaseString];
 
       }
