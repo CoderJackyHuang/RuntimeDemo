@@ -41,12 +41,6 @@
     if (objects[i] == nil) {
       hasNilObject = YES;
       NSLog(@"%s object at index %lu is nil, it will be filtered", __FUNCTION__, i);
-      
-//#if DEBUG
-//      // 如果可以对数组中为nil的元素信息打印出来，增加更容易读懂的日志信息，这对于我们改bug就好定位多了
-//      NSString *errorMsg = [NSString stringWithFormat:@"数组元素不能为nil，其index为: %lu", i];
-//      NSAssert(objects[i] != nil, errorMsg);
-//#endif
     }
   }
   
@@ -61,6 +55,7 @@
       }
     }
     
+    NSLog(@"%@", [NSThread callStackSymbols]);
     return [self hdf_initWithObjects:newObjects count:index];
   }
 

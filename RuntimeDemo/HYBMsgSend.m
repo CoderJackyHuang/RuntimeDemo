@@ -32,8 +32,11 @@
 }
 
 // C函数
-int cStyleFunc(const void *arg1, const void *arg2) {
-  NSLog(@"%s was called, arg1 is %s, and arg2 is %s", __FUNCTION__, arg1, arg2);
+int cStyleFunc(id receiver, SEL sel, const void *arg1, const void *arg2) {
+  NSLog(@"%s was called, arg1 is %@, and arg2 is %@",
+        __FUNCTION__,
+        [NSString stringWithUTF8String:arg1],
+        [NSString stringWithUTF8String:arg1]);
   return 1;
 }
 
@@ -70,9 +73,9 @@ int cStyleFunc(const void *arg1, const void *arg2) {
                                    @"参数1",
                                    2016);
   NSLog(@"6. return value is %d", returnValue);
-  
+  NSLog(@"%s", @encode(const void *));
   // 7.动态添加方法，然后调用C函数
-  class_addMethod(msg.class, NSSelectorFromString(@"cStyleFunc"), (IMP)cStyleFunc, "i@:");
+  class_addMethod(msg.class, NSSelectorFromString(@"cStyleFunc"), (IMP)cStyleFunc, "i@:r^vr^v");
   returnValue = ((int (*)(id, SEL, const void *, const void *))
                  objc_msgSend)((id)msg,
                                NSSelectorFromString(@"cStyleFunc"),
@@ -81,15 +84,15 @@ int cStyleFunc(const void *arg1, const void *arg2) {
   NSLog(@"7. return value is %d", returnValue);
   
   // 8.返回浮点型时，调用objc_msgSend/objc_msgSend_fpret,其结果是一样的。
- float retFloatValue = ((float (*)(id, SEL))objc_msgSend_fpret)((id)msg, @selector(returnFloatType));
-  NSLog(@"%f", retFloatValue);
+// float retFloatValue = ((float (*)(id, SEL))objc_msgSend_fpret)((id)msg, @selector(returnFloatType));
+//  NSLog(@"%f", retFloatValue);
   
-   retFloatValue = ((float (*)(id, SEL))objc_msgSend)((id)msg, @selector(returnFloatType));
-  NSLog(@"%f", retFloatValue);
+//   retFloatValue = ((float (*)(id, SEL))objc_msgSend)((id)msg, @selector(returnFloatType));
+//  NSLog(@"%f", retFloatValue);
 
   // 9.返回结构体时，不能使用objc_msgSend，而是要使用objc_msgSend_stret，否则会crash
-  CGRect frame = ((CGRect (*)(id, SEL))objc_msgSend_stret)((id)msg, @selector(returnTypeIsStruct));
-  NSLog(@"9. return value is %@", NSStringFromCGRect(frame));
+//  CGRect frame = ((CGRect (*)(id, SEL))objc_msgSend_stret)((id)msg, @selector(returnTypeIsStruct));
+//  NSLog(@"9. return value is %@", NSStringFromCGRect(frame));
 
 }
 

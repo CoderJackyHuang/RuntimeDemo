@@ -10,6 +10,6 @@
 
 @interface NSArray (Swizzling)
 
-
+@property (nonatomic, weak) id delegate;
 
 @end

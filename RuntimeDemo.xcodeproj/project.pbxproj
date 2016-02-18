@@ -11,6 +11,9 @@
 		691D6FC51C421E68003D41FB /* HYBPropertyLearn.m in Sources */ = {isa = PBXBuildFile; fileRef = 691D6FC41C421E68003D41FB /* HYBPropertyLearn.m */; };
 		691D6FC61C421E68003D41FB /* HYBPropertyLearn.m in Sources */ = {isa = PBXBuildFile; fileRef = 691D6FC41C421E68003D41FB /* HYBPropertyLearn.m */; };
 		691D6FC71C421E68003D41FB /* HYBPropertyLearn.m in Sources */ = {isa = PBXBuildFile; fileRef = 691D6FC41C421E68003D41FB /* HYBPropertyLearn.m */; };
+		69384B111C47631700B61526 /* HYBTestEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 69384B101C47631700B61526 /* HYBTestEntry.m */; };
+		69384B121C47631700B61526 /* HYBTestEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 69384B101C47631700B61526 /* HYBTestEntry.m */; };
+		69384B131C47631700B61526 /* HYBTestEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 69384B101C47631700B61526 /* HYBTestEntry.m */; };
 		69654F5B1C2CDE6600FFB5AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69654F5A1C2CDE6600FFB5AC /* main.m */; };
 		69654F5E1C2CDE6600FFB5AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69654F5D1C2CDE6600FFB5AC /* AppDelegate.m */; };
 		69654F611C2CDE6600FFB5AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69654F601C2CDE6600FFB5AC /* ViewController.m */; };
@@ -83,6 +86,8 @@
 		54494B247380150E00DCBCF2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		691D6FC31C421E68003D41FB /* HYBPropertyLearn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBPropertyLearn.h; sourceTree = "<group>"; };
 		691D6FC41C421E68003D41FB /* HYBPropertyLearn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBPropertyLearn.m; sourceTree = "<group>"; };
+		69384B0F1C47631700B61526 /* HYBTestEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBTestEntry.h; sourceTree = "<group>"; };
+		69384B101C47631700B61526 /* HYBTestEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBTestEntry.m; sourceTree = "<group>"; };
 		69654F561C2CDE6600FFB5AC /* RuntimeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuntimeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69654F5A1C2CDE6600FFB5AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69654F5C1C2CDE6600FFB5AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -171,6 +176,15 @@
 			name = Property;
 			sourceTree = "<group>";
 		};
+		69384B0E1C47630500B61526 /* TestEntry */ = {
+			isa = PBXGroup;
+			children = (
+				69384B0F1C47631700B61526 /* HYBTestEntry.h */,
+				69384B101C47631700B61526 /* HYBTestEntry.m */,
+			);
+			name = TestEntry;
+			sourceTree = "<group>";
+		};
 		69654F4D1C2CDE6600FFB5AC = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +210,7 @@
 		69654F581C2CDE6600FFB5AC /* RuntimeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				69384B0E1C47630500B61526 /* TestEntry */,
 				69657DD21C44A66E0095C032 /* Method */,
 				691D6FC21C421E3E003D41FB /* Property */,
 				697364AE1C3A45F9003E1FE9 /* MethodExchange */,
@@ -511,6 +526,7 @@
 				69657DDA1C44D1A30095C032 /* NSMutableArray+Swizzling.m in Sources */,
 				698828201C3383F8002363D5 /* HDFArchiveModel.m in Sources */,
 				6980598D1C30D6070021085B /* HYBTestModel.m in Sources */,
+				69384B111C47631700B61526 /* HYBTestEntry.m in Sources */,
 				698828351C34D476002363D5 /* HYBPig.m in Sources */,
 				69654F931C30214500FFB5AC /* UIControl+HYBBlock.m in Sources */,
 				69E0205C1C3771AF0034BF32 /* HYBMsgSend.m in Sources */,
@@ -537,6 +553,7 @@
 				698828311C34CBAB002363D5 /* HYBDog.m in Sources */,
 				6980598E1C30D6070021085B /* HYBTestModel.m in Sources */,
 				69657DE01C44D8620095C032 /* NSArray+Swizzling.m in Sources */,
+				69384B121C47631700B61526 /* HYBTestEntry.m in Sources */,
 				69657DDB1C44D1A30095C032 /* NSMutableArray+Swizzling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,6 +576,7 @@
 				698828321C34CBAB002363D5 /* HYBDog.m in Sources */,
 				6980598F1C30D6070021085B /* HYBTestModel.m in Sources */,
 				69657DE11C44D8620095C032 /* NSArray+Swizzling.m in Sources */,
+				69384B131C47631700B61526 /* HYBTestEntry.m in Sources */,
 				69657DDC1C44D1A30095C032 /* NSMutableArray+Swizzling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -684,6 +702,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RuntimeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huangyibiao.RuntimeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -696,6 +715,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RuntimeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huangyibiao.RuntimeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

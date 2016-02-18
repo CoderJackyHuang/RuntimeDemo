@@ -12,13 +12,13 @@
 
 @implementation NSArray (Swizzling)
 
-+ (void)load {
-  static dispatch_once_t onceToken;
-  dispatch_once(&onceToken, ^{
-    [self swizzleSelector:@selector(lastObject)
-     withSwizzledSelector:@selector(hdf_lastObject)];
-  });
-}
+//+ (void)load {
+//  static dispatch_once_t onceToken;
+//  dispatch_once(&onceToken, ^{
+//    [self swizzleSelector:@selector(lastObject)
+//     withSwizzledSelector:@selector(hdf_lastObject)];
+//  });
+//}
 
 - (id)hdf_lastObject {
   if (self.count == 0) {
@@ -30,5 +30,13 @@
   return [self hdf_lastObject];
 }
 
+- (id)delegate {
+
+  return objc_getAssociatedObject(self, @"__delegate__key");
+}
+
+- (void)setDelegate:(id)delegate {
+  objc_setAssociatedObject(self, @"__delegate__key", delegate, OBJC_ASSOCIATION_ASSIGN);
+}
 
 @end

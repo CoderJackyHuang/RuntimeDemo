@@ -11,7 +11,6 @@
 @interface HYBCat : NSObject
 
 
-
 + (void)test;
 
 @end

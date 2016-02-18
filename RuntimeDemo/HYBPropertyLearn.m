@@ -53,6 +53,7 @@
   }
   
   free(ivars);
+  
 }
 
 + (void)test {
